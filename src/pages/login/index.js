@@ -1,5 +1,6 @@
 import React from 'react'
-export default class Index extends React.Component{
+import {connect} from 'react-redux'
+class Index extends React.Component{
     constructor(){
         super()
         this.state={
@@ -16,8 +17,7 @@ export default class Index extends React.Component{
             alert('请输入密码！！！')
             return
         }
-        localStorage['username'] = this.state.username
-        localStorage['isLogin'] = true
+        this.props.dispatch({type:'LOGIN',data:{username:this.state.username,isLogin:true}})
         this.props.history.go(-1)
     }
     render(){
@@ -32,3 +32,4 @@ export default class Index extends React.Component{
         )
     }
 }
+export default connect()(Index)
