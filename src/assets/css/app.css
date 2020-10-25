@@ -1,0 +1,27 @@
+html.body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.active{
+    background-color: blue;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.btn-color{
+    background: blueviolet;
+}
+.banner{
+    width: 800px;
+    height: 350px;
+}

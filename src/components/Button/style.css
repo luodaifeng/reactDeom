@@ -1,0 +1,8 @@
+.my-button{
+ background: red;
+ border: none;
+ width: 80px;
+ height: 25px;
+ outline: none;
+ border-radius: 10px;
+}
